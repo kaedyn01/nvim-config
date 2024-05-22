@@ -1,10 +1,12 @@
 -- Print greeting message
 local current_hour = tonumber(os.date("%H"))
 
-if 5 <= current_hour and current_hour <= 10 then
-	print("Good morning")
-elseif 11 <= current_hour and current_hour <= 18 then
+if current_hour >= 19 then
+	print("Good eveneing")
+elseif current_hour >= 12 then
 	print("Good afternoon")
+elseif current_hour >= 5 then
+	print("Good morning")
 else
 	print("Good evening")
 end
