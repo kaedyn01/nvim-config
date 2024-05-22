@@ -1,16 +1,13 @@
--- Show line numbers.
-vim.opt.number = true	
+-- Print greeting message
+local current_hour = tonumber(os.date("%H"))
 
--- Defines length of autoindent in spaces. 
-vim.opt.shiftwidth = 4
+if 5 <= current_hour and current_hour <= 10 then
+	print("Good morning")
+elseif 11 <= current_hour and current_hour <= 18 then
+	print("Good afternoon")
+else
+	print("Good evening")
+end
 
--- Defines length of tab in spaces.
-vim.opt.tabstop = 4
-
--- Autoindent to match code structure.
-vim.opt.autoindent = true
-vim.opt.smartindent = true
-vim.opt.cindent = true
-
--- Min number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+-- Load custom modules/settings
+require("options")
