@@ -1,6 +1,7 @@
 ## NeoVim Config
 
-This is my NeoVim config for future use. 
+This is my NeoVim config for future use. All config options will
+be put in *init.lua*
 
 ## Linux Installation 
 
