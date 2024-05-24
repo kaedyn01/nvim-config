@@ -44,3 +44,6 @@ vim.opt.cindent = true
 
 -- Min number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- Sets the precursor key for commands to ';'.
+vim.g.mapleader = ';'

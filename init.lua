@@ -12,4 +12,7 @@ else
 end
 
 -- Load custom modules/settings
-require("options")
+require("core.options")
+
+-- Load package manager
+require("lazy")
