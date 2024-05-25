@@ -26,7 +26,7 @@ vim.g.mapleader = " "
 
 -- Splits current window into two vertical windows.
 mode = "n"
-shortcut = "<leader>ws"
+shortcut = "<leader>wa"
 command = "<C-w>v"
 description = { desc = "Splits current window into two vertical windows." }
 vim.keymap.set(mode, shortcut, command, description)
@@ -58,3 +58,11 @@ shortcut = "<leader>pv"
 command = "<cmd>Ex<CR>"
 description = { desc = "Shows a view of the current directory (project view)." }
 vim.keymap.set(mode, shortcut, command, description)
+
+-- Splits current window into two vertical windows
+mode = "n"
+shortcut = "<leader>ws"
+command = "<C-w>w"
+description = { desc = "Switches to the next split window." }
+vim.keymap.set(mode, shortcut, command, description)
+

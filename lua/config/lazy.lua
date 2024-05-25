@@ -1,5 +1,6 @@
 --[[
-This file is used to bootstrap and download the specified plugins.
+This file is used to bootstrap Lazy package manager and download the 
+specified plugins.
 
 The following 11 lines are copy and pasted from the lazy.nvim
 github repo.
@@ -20,10 +21,5 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- This table specifies the plugins that are to be downloaded.
-plugins = {
-	{ "rose-pine/neovim", name = "rose-pine" }
-}
-
--- Method that actually loads the plugins.
-require("lazy").setup(plugins)
+-- This is the method that actually loads the plugins.
+require("lazy").setup("config.plugins")
