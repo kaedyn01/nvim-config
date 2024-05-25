@@ -38,13 +38,6 @@ command = "<C-w>s"
 description = { desc = "Splits current window into two horizontal windows." }
 vim.keymap.set(mode, shortcut, command, description)
 
--- Sets the split windows equal in size.
-mode = "n"
-shortcut = "<leader>we"
-command = "<C-w>="
-description = { desc = "Sets the split windows equal in size." }
-vim.keymap.set(mode, shortcut, command, description)
-
 -- Closes the active window.
 mode = "n"
 shortcut = "<leader>wd"
@@ -69,13 +62,13 @@ vim.keymap.set(mode, shortcut, command, description)
 -- Switch to the window to the right of the active window.
 mode = "n"
 shortcut = "<leader>we"
-command = "<C-w>L"
+command = "<C-w>l"
 description = { desc = "Switch to the window to the right of the active window." }
 vim.keymap.set(mode, shortcut, command, description)
 
 -- Switch to the window to the left of the active window.
 mode = "n"
 shortcut = "<leader>wq"
-command = "<C-w>H"
+command = "<C-w>h"
 description = { desc = "Switch to the window to the left of the active window." }
 vim.keymap.set(mode, shortcut, command, description)
