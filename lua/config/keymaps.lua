@@ -26,28 +26,28 @@ vim.g.mapleader = " "
 
 -- Splits current window into two vertical windows.
 mode = "n"
-shortcut = "<leader>sv"
+shortcut = "<leader>ws"
 command = "<C-w>v"
 description = { desc = "Splits current window into two vertical windows." }
 vim.keymap.set(mode, shortcut, command, description)
 
 -- Splits current window into two vertical windows
 mode = "n"
-shortcut = "<leader>sh"
+shortcut = "<leader>wh"
 command = "<C-w>s"
 description = { desc = "Splits current window into two horizontal windows." }
 vim.keymap.set(mode, shortcut, command, description)
 
 -- Sets the split windows equal in size.
 mode = "n"
-shortcut = "<leader>se"
+shortcut = "<leader>we"
 command = "<C-w>="
 description = { desc = "Sets the split windows equal in size." }
 vim.keymap.set(mode, shortcut, command, description)
 
 -- Closes the active window.
 mode = "n"
-shortcut = "<leader>sx"
+shortcut = "<leader>wd"
 command = "<cmd>close<CR>"
 description = { desc = "Closes the active window." }
 vim.keymap.set(mode, shortcut, command, description)

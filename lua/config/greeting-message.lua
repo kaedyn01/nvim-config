@@ -1,4 +1,7 @@
--- Print greeting message
+--[[
+This file displays a greeting message based on the time 
+of day.
+--]]
 local current_hour = tonumber(os.date("%H"))
 
 if current_hour >= 19 then
