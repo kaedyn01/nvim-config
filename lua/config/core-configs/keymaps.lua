@@ -66,3 +66,16 @@ command = "<C-w>w"
 description = { desc = "Switches to the next split window." }
 vim.keymap.set(mode, shortcut, command, description)
 
+-- Switch to the window to the right of the active window.
+mode = "n"
+shortcut = "<leader>we"
+command = "<C-w>L"
+description = { desc = "Switch to the window to the right of the active window." }
+vim.keymap.set(mode, shortcut, command, description)
+
+-- Switch to the window to the left of the active window.
+mode = "n"
+shortcut = "<leader>wq"
+command = "<C-w>H"
+description = { desc = "Switch to the window to the left of the active window." }
+vim.keymap.set(mode, shortcut, command, description)
