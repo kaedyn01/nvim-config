@@ -45,13 +45,6 @@ command = "<cmd>close<CR>"
 description = { desc = "Closes the active window." }
 vim.keymap.set(mode, shortcut, command, description)
 
--- Shows a view of the current directory (project view).
-mode = "n"
-shortcut = "<leader>pv"
-command = "<cmd>Ex<CR>"
-description = { desc = "Shows a view of the current directory (project view)." }
-vim.keymap.set(mode, shortcut, command, description)
-
 -- Splits current window into two vertical windows
 mode = "n"
 shortcut = "<leader>ws"
