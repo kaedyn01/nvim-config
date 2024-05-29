@@ -23,4 +23,3 @@ file can be required.
 --]]
 require("config.core-configs")
 require("config.lazy")
-

@@ -72,3 +72,10 @@ shortcut = "<leader>wq"
 command = "<C-w>h"
 description = { desc = "Switch to the window to the left of the active window." }
 vim.keymap.set(mode, shortcut, command, description)
+
+-- Open and close nvim-tree file tree.
+mode = "n"
+shortcut = "<leader>pf"
+command = ":NvimTreeToggle<CR>"
+description = { desc = "Shortcut to open and close nvim-tree file tree." }
+vim.keymap.set(mode, shortcut, command, description)
