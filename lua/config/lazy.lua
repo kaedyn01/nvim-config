@@ -22,4 +22,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- This is the method that actually loads the plugins.
-require("lazy").setup({{import = "config.plugins"}, {import = "config.plugins.lsp"}})
+require("lazy").setup({{import = "config.plugins"}})
